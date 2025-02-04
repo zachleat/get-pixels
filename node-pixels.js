@@ -1,7 +1,6 @@
 'use strict'
 
 var ndarray       = require('ndarray')
-var path          = require('path')
 var PNG           = require('pngjs').PNG
 var jpeg          = require('jpeg-js')
 var pack          = require('ndarray-pack')
@@ -160,12 +159,12 @@ module.exports = function getPixels(url, type, cb) {
       if(!response.ok) {
         throw new Error("HTTP request failed")
       }
-      
+
       contentType = response.headers.get("content-type")
       if(!contentType) {
         throw new Error("Invalid content-type")
       }
-      
+
       return response.arrayBuffer()
     }).then(body => {
       doParse(contentType, body, cb)

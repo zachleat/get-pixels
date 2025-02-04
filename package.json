@@ -1,13 +1,13 @@
 {
-  "name": "get-pixels",
-  "version": "3.3.3",
-  "description": "Reads the pixels of an image as an ndarray",
+  "name": "@zachleat/get-pixels",
+  "version": "1.0.0",
+  "description": "Reads the pixels of an image as an ndarray. Fork of https://github.com/scijs/get-pixels",
   "main": "node-pixels.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "data-uri-to-buffer": "0.0.3",
+    "data-uri-to-buffer": "^6.0.2",
     "jpeg-js": "^0.4.1",
     "mime-types": "^2.0.1",
     "ndarray": "^1.0.13",
@@ -19,15 +19,11 @@
     "through": "^2.3.4"
   },
   "devDependencies": {
-    "beefy": "^2.1.8",
-    "brfs": "^1.2.0",
-    "browserify": "^3.44.0",
-    "tap": "^10.7.0",
-    "tape": "^2.12.3"
+    "tap": "^21.0.1",
+    "tape": "^5.9.0"
   },
   "scripts": {
-    "test": "tap test/*.js",
-    "test-browser": "beefy test/test.js --open  -- -t brfs"
+    "test": "tap test/*.js"
   },
   "repository": {
     "type": "git",
