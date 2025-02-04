@@ -1,7 +1,7 @@
 {
   "name": "@zachleat/get-pixels",
   "version": "1.0.0",
-  "description": "Reads the pixels of an image as an ndarray. Fork of https://github.com/scijs/get-pixels",
+  "description": "Reads the pixels of an image as an ndarray. Node-only, deps-updated fork of https://github.com/scijs/get-pixels",
   "main": "node-pixels.js",
   "directories": {
     "test": "test"
@@ -46,8 +46,7 @@
     "data",
     "parse",
     "dom",
-    "node",
-    "browserify"
+    "node"
   ],
   "browser": "dom-pixels.js",
   "author": "Mikola Lysenko",
