@@ -14,7 +14,7 @@ Example
 ```js
 var getPixels = require("@zachleat/get-pixels")
 
-getPixels("lena.png", function(err, pixels) {
+getPixels("possum.png", function(err, pixels) {
   if(err) {
     console.log("Bad image path")
     return
